@@ -1,0 +1,106 @@
+.stayProductive {
+  display: flex;
+  align-items: center;
+  padding: $sidePadding;
+  padding-top: 50px;
+  padding-bottom: 110px;
+  background: hsl(240, 63%, 98%);
+  &__left {
+    h2 {
+      padding-bottom: 40px;
+      font-family: $raleway;
+      font-size: 39px;
+    }
+    &__text {
+      width: 520px;
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+    .seeHowLink {
+      position: relative;
+      padding-right: 17px;
+      padding-bottom: 3px;
+      //   margin on credential
+      border-bottom: 1px solid $modCyan;
+      color: $modCyan;
+      svg {
+        position: absolute;
+        top: 5px;
+        g {
+          g {
+            use {
+              fill: $modCyan;
+            }
+          }
+        }
+      }
+      &:hover {
+        color: hsl(170, 55%, 63%);
+        border-bottom: 1px solid hsl(170, 55%, 63%);
+
+        svg {
+          g {
+            g {
+              use {
+                fill: hsl(170, 55%, 63%);
+              }
+            }
+          }
+        }
+      }
+    }
+    .credential {
+      position: relative;
+      width: 356px;
+      margin-top: 50px;
+      padding: 50px 30px 20px;
+      border-radius: 4px;
+      background-color: white;
+      box-shadow: 0px 0px 5px 10px hsl(238, 22%, 94%, 50%);
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 30px;
+        top: 30px;
+        background: center top / 14px 15px url(/images/icon-quotes.svg)
+          no-repeat;
+        height: 23px;
+        width: 14px;
+      }
+      &__text {
+        margin-bottom: 15px;
+        font-size: 13px;
+        letter-spacing: 0.04em;
+        line-height: 1.7;
+      }
+      .personInfo {
+        display: flex;
+        img {
+          height: 30px;
+          margin-right: 10px;
+          border-radius: 50%;
+        }
+        .info {
+          p {
+            &:nth-child(1) {
+              font-size: 11px;
+              font-weight: 700;
+              letter-spacing: 0.06em;
+            }
+            &:nth-child(2) {
+              font-size: 9px;
+              color: hsl(243, 87%, 12%, 70%);
+            }
+          }
+        }
+      }
+    }
+  }
+  &__right {
+    margin-left: 20px;
+    img {
+      height: 480px;
+    }
+  }
+}

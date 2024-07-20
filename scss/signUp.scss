@@ -1,0 +1,54 @@
+.signUp {
+  display: flex;
+  padding: $sidePadding;
+  padding-top: 100px;
+  background-color: $desBlue;
+  &__left {
+    h2 {
+      margin-bottom: 20px;
+      font-family: $raleway;
+      font-size: 32px;
+      color: white;
+    }
+    p {
+      width: 520px;
+      padding-bottom: 80px;
+      letter-spacing: 0.01em;
+      color: white;
+    }
+  }
+  &__right {
+    input {
+      display: block;
+      width: 480px;
+      height: 47px;
+      margin-bottom: 15px;
+      padding-left: 20px;
+      padding-bottom: 2px;
+      border-radius: 4px;
+      border: none;
+      box-shadow: 0px 2px 2px 3px hsl(238, 22%, 40%, 60%);
+      &::placeholder {
+        color: hsl(0, 0%, 65%);
+      }
+    }
+    button {
+      display: inline-block;
+      height: 47px;
+      width: 200px;
+      padding: 0;
+      border: none;
+      border-radius: 3px;
+      outline: inherit;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 600;
+      text-align: center;
+      text-decoration: none;
+      box-shadow: 0px 1px 5px 3px hsl(238, 22%, 39%);
+      background: $brightBlue;
+      color: white;
+    }
+  }
+}

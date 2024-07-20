@@ -1,0 +1,85 @@
+footer {
+  padding: $sidePadding;
+  padding-top: 90px;
+  background-color: $daBlue;
+  p,
+  a {
+    color: white;
+  }
+  .logo {
+    margin-bottom: 20px;
+  }
+  .footerBottom {
+    display: flex;
+    // justify-content: space-between;
+    padding-bottom: 80px;
+    .phoneAndEmail {
+      width: 440px;
+      .phone {
+        position: relative;
+        padding-left: 37px;
+        margin-bottom: 15px;
+        &:before {
+          content: url(/images/icon-phone.svg);
+          position: absolute;
+          left: 0px;
+          top: 2px;
+        }
+      }
+      .email {
+        position: relative;
+        padding-left: 37px;
+        margin-bottom: 15px;
+        &:before {
+          content: url(/images/icon-email.svg);
+          position: absolute;
+          left: 0px;
+          top: 2px;
+        }
+      }
+    }
+    .links {
+      display: flex;
+      justify-content: space-between;
+      width: 355px;
+      &__left {
+        a {
+          display: block;
+          margin-bottom: 13px;
+        }
+      }
+      &__right {
+        a {
+          display: block;
+          margin-bottom: 13px;
+        }
+      }
+    }
+    .socialLinks {
+      display: flex;
+      justify-content: center;
+      width: 500px;
+      .box {
+        display: flex;
+        justify-content: space-between;
+        width: 120px;
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          border: 1px solid white;
+          svg {
+            width: 16px;
+            height: 16px;
+            g {
+              fill: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
