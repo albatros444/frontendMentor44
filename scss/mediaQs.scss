@@ -1,0 +1,199 @@
+@media screen and (max-width: 600px) {
+  nav {
+    height: 70px;
+    padding: $sidePaddingMob;
+    img {
+      height: 24px;
+    }
+    .links {
+      width: 165px;
+      font-size: 12px;
+    }
+  }
+  .hero {
+    display: block;
+    padding: $sidePaddingMob;
+    padding-bottom: 130px;
+
+    &__right {
+      margin-left: 0;
+      img {
+        height: auto;
+        width: 100%;
+      }
+    }
+    &__left {
+      width: 100%;
+      h1 {
+        font-family: $openSans;
+        font-size: 24px;
+        text-align: center;
+      }
+      .heroText {
+        font-size: 14px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        line-height: 1.4;
+      }
+      form {
+        padding: 0 10px;
+        input {
+          width: 100%;
+        }
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .stayProductive {
+    display: block;
+    padding: $sidePaddingMob;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    &__right {
+      margin-left: 0;
+      img {
+        height: auto;
+        width: 100%;
+        margin-bottom: 70px;
+      }
+    }
+    &__left {
+      h2 {
+        padding-bottom: 24px;
+        font-size: 16px;
+        text-align: center;
+      }
+      &__text {
+        width: 100%;
+        font-size: 14px;
+        color: $desBlue;
+      }
+
+      .seeHowLink {
+        display: block;
+        width: 130px;
+        margin: 30px auto 0;
+        font-size: 12px;
+        padding-bottom: 7px;
+        svg {
+          top: 2px;
+          right: -2px;
+        }
+      }
+      .credential {
+        width: 280px;
+        margin: 40px auto 0;
+        padding: 40px 12px 20px 25px;
+
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          left: 30px;
+          top: 20px;
+          background: center top / 11px 13px url(/images/icon-quotes.svg)
+            no-repeat;
+          height: 18px;
+          width: 12px;
+        }
+        &__text {
+          font-size: 11px;
+          line-height: 1.65;
+          font-weight: 500;
+          // color: hsl(243, 27%, 32%);
+          color: hsl(243, 67%, 12%);
+          letter-spacing: -0.01em;
+        }
+        .personInfo {
+          img {
+            height: 25px;
+          }
+          .info {
+            p {
+              &:nth-child(1) {
+                font-size: 10px;
+                letter-spacing: 0;
+              }
+              &:nth-child(2) {
+                font-size: 8px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .signUp {
+    display: block;
+    padding: 55px 30px 70px;
+    text-align: center;
+    &__left {
+      h2 {
+        font-size: 18px;
+      }
+      p {
+        width: 100%;
+        padding-bottom: 30px;
+        font-size: 14px;
+        letter-spacing: 0.04em;
+        line-height: 1.5;
+      }
+    }
+    &__right {
+      input {
+        display: inline-block;
+        width: 240px;
+        height: 32px;
+        border-radius: 2px;
+        font-size: 10px;
+      }
+      button {
+        width: 240px;
+        height: 32px;
+        border-radius: 2px;
+        font-size: 10px;
+        letter-spacing: 0.01em;
+      }
+    }
+  }
+  footer {
+    padding: 70px 40px 0;
+    .logo {
+      margin-bottom: 40px;
+    }
+    .footerBottom {
+      display: block;
+
+      .phoneAndEmail {
+        margin-bottom: 60px;
+      }
+      .links {
+        display: block;
+        margin-bottom: 40px;
+        a {
+          display: inline-block;
+          width: auto;
+        }
+        &__left {
+          margin-bottom: 60px;
+        }
+      }
+      .socialLinks {
+        width: 100%;
+        .box {
+          width: 105px;
+          a {
+            width: 27px;
+            height: 27px;
+            svg {
+              width: 12px;
+              height: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
