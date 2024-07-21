@@ -49,6 +49,10 @@
       box-shadow: 0px 1px 5px 3px hsl(238, 22%, 39%);
       background: $brightBlue;
       color: white;
+      transition: $trans13;
+      &:hover {
+        background-color: hsl(224, 93%, 74%);
+      }
     }
   }
 }

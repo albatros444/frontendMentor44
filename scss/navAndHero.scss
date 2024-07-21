@@ -9,6 +9,13 @@ nav {
     justify-content: space-between;
     width: 270px;
     font-family: $raleway;
+    a {
+      color: $daBlue;
+      transition: $trans13;
+      &:hover {
+        color: hsl(238, 22%, 44%);
+      }
+    }
   }
 }
 
@@ -69,6 +76,10 @@ nav {
         text-decoration: none;
         background-color: $brightBlue;
         color: white;
+        transition: $trans13;
+        &:hover {
+          background-color: hsl(224, 93%, 74%);
+        }
       }
     }
   }

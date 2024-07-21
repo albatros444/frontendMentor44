@@ -24,12 +24,16 @@
       //   margin on credential
       border-bottom: 1px solid $modCyan;
       color: $modCyan;
+      transition: $trans13;
       svg {
         position: absolute;
         top: 5px;
+
         g {
           g {
             use {
+              transition: $trans13;
+
               fill: $modCyan;
             }
           }

@@ -46,12 +46,20 @@ footer {
         a {
           display: block;
           margin-bottom: 13px;
+          transition: $trans13;
+          &:hover {
+            color: hsl(218, 82%, 74%);
+          }
         }
       }
       &__right {
         a {
           display: block;
           margin-bottom: 13px;
+          transition: $trans13;
+          &:hover {
+            color: hsl(218, 82%, 74%);
+          }
         }
       }
     }
@@ -71,11 +79,21 @@ footer {
           height: 32px;
           border-radius: 50%;
           border: 1px solid white;
+          transition: $trans13;
           svg {
             width: 16px;
             height: 16px;
             g {
               fill: white;
+              transition: $trans13;
+            }
+          }
+          &:hover {
+            border: 1px solid hsl(218, 82%, 74%);
+            svg {
+              g {
+                fill: hsl(218, 82%, 74%);
+              }
             }
           }
         }

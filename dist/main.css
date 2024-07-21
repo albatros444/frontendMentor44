@@ -56,6 +56,7 @@ ul {
   margin: auto;
   font-size: 11px;
   text-align: center;
+  color: hsl(0, 0%, 75%);
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -73,6 +74,13 @@ nav .links {
   justify-content: space-between;
   width: 270px;
   font-family: "Raleway", sans-serif;
+}
+nav .links a {
+  color: hsl(243, 87%, 12%);
+  transition: all 0.13s ease-in-out;
+}
+nav .links a:hover {
+  color: hsl(238, 22%, 44%);
 }
 
 .hero {
@@ -133,6 +141,10 @@ nav .links {
   text-decoration: none;
   background-color: hsl(224, 93%, 58%);
   color: white;
+  transition: all 0.13s ease-in-out;
+}
+.hero__left form button:hover {
+  background-color: hsl(224, 93%, 74%);
 }
 
 .stayProductive {
@@ -160,12 +172,14 @@ nav .links {
   padding-bottom: 3px;
   border-bottom: 1px solid hsl(170, 45%, 43%);
   color: hsl(170, 45%, 43%);
+  transition: all 0.13s ease-in-out;
 }
 .stayProductive__left .seeHowLink svg {
   position: absolute;
   top: 5px;
 }
 .stayProductive__left .seeHowLink svg g g use {
+  transition: all 0.13s ease-in-out;
   fill: hsl(170, 45%, 43%);
 }
 .stayProductive__left .seeHowLink:hover {
@@ -273,6 +287,10 @@ nav .links {
   box-shadow: 0px 1px 5px 3px hsl(238, 22%, 39%);
   background: hsl(224, 93%, 58%);
   color: white;
+  transition: all 0.13s ease-in-out;
+}
+.signUp__right button:hover {
+  background-color: hsl(224, 93%, 74%);
 }
 
 footer {
@@ -324,10 +342,18 @@ footer .footerBottom .links {
 footer .footerBottom .links__left a {
   display: block;
   margin-bottom: 13px;
+  transition: all 0.13s ease-in-out;
+}
+footer .footerBottom .links__left a:hover {
+  color: hsl(218, 82%, 74%);
 }
 footer .footerBottom .links__right a {
   display: block;
   margin-bottom: 13px;
+  transition: all 0.13s ease-in-out;
+}
+footer .footerBottom .links__right a:hover {
+  color: hsl(218, 82%, 74%);
 }
 footer .footerBottom .socialLinks {
   display: flex;
@@ -347,6 +373,7 @@ footer .footerBottom .socialLinks .box a {
   height: 32px;
   border-radius: 50%;
   border: 1px solid white;
+  transition: all 0.13s ease-in-out;
 }
 footer .footerBottom .socialLinks .box a svg {
   width: 16px;
@@ -354,6 +381,13 @@ footer .footerBottom .socialLinks .box a svg {
 }
 footer .footerBottom .socialLinks .box a svg g {
   fill: white;
+  transition: all 0.13s ease-in-out;
+}
+footer .footerBottom .socialLinks .box a:hover {
+  border: 1px solid hsl(218, 82%, 74%);
+}
+footer .footerBottom .socialLinks .box a:hover svg g {
+  fill: hsl(218, 82%, 74%);
 }
 
 @media screen and (max-width: 600px) {
