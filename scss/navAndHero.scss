@@ -45,23 +45,39 @@ nav {
       font-size: 18px;
     }
     form {
-      input {
-        width: 318px;
-        height: 42px;
-        margin-right: 10px;
-        margin-bottom: 15px;
-        padding-left: 18px;
-        padding-top: 4px;
-        border-radius: 3px;
-        font-size: 14px;
-        letter-spacing: 0.04em;
-        border: 1px solid hsl(0, 0%, 50%);
-        &::placeholder {
-          color: hsl(0, 0%, 65%);
+      display: flex;
+      .inputBox {
+        height: 65px;
+        input {
+          position: relative;
+          width: 318px;
+          height: 42px;
+          margin-right: 10px;
+          margin-bottom: 5px;
+          padding-left: 18px;
+          padding-top: 4px;
+          border-radius: 3px;
+          font-size: 14px;
+          letter-spacing: 0.04em;
+          border: 1px solid hsl(0, 0%, 50%);
+          &::placeholder {
+            color: hsl(0, 0%, 65%);
+          }
+        }
+        .errorMessage {
+          display: none;
+          font-size: 13px;
+          color: $red;
+        }
+        .wrongEmail {
+          border: 1px solid $red;
+          & + p {
+            display: block;
+          }
         }
       }
       button {
-        display: inline-block;
+        display: block;
         height: 42px;
         width: 200px;
         padding: 0;

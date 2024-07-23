@@ -110,11 +110,18 @@ nav .links a:hover {
   margin-bottom: 20px;
   font-size: 18px;
 }
-.hero__left form input {
+.hero__left form {
+  display: flex;
+}
+.hero__left form .inputBox {
+  height: 65px;
+}
+.hero__left form .inputBox input {
+  position: relative;
   width: 318px;
   height: 42px;
   margin-right: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   padding-left: 18px;
   padding-top: 4px;
   border-radius: 3px;
@@ -122,11 +129,22 @@ nav .links a:hover {
   letter-spacing: 0.04em;
   border: 1px solid hsl(0, 0%, 50%);
 }
-.hero__left form input::placeholder {
+.hero__left form .inputBox input::placeholder {
   color: hsl(0, 0%, 65%);
 }
+.hero__left form .inputBox .errorMessage {
+  display: none;
+  font-size: 13px;
+  color: hsl(345, 60%, 69%);
+}
+.hero__left form .inputBox .wrongEmail {
+  border: 1px solid hsl(345, 60%, 69%);
+}
+.hero__left form .inputBox .wrongEmail + p {
+  display: block;
+}
 .hero__left form button {
-  display: inline-block;
+  display: block;
   height: 42px;
   width: 200px;
   padding: 0;
@@ -240,6 +258,7 @@ nav .links a:hover {
 
 .signUp {
   display: flex;
+  justify-content: space-between;
   padding: 0 80px;
   padding-top: 100px;
   background-color: hsl(238, 22%, 44%);
@@ -256,6 +275,9 @@ nav .links a:hover {
   letter-spacing: 0.01em;
   color: white;
 }
+.signUp__right {
+  padding-right: 50px;
+}
 .signUp__right input {
   display: block;
   width: 480px;
@@ -269,6 +291,19 @@ nav .links a:hover {
 }
 .signUp__right input::placeholder {
   color: hsl(0, 0%, 65%);
+}
+.signUp__right .errorMessage {
+  display: none;
+  font-size: 13px;
+  margin-bottom: 15px;
+  color: white;
+}
+.signUp__right .wrongEmail {
+  border: 1px solid hsl(345, 60%, 69%);
+  margin-bottom: 5px;
+}
+.signUp__right .wrongEmail + p {
+  display: block;
 }
 .signUp__right button {
   display: inline-block;

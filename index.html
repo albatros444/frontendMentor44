@@ -42,7 +42,14 @@
           and co-workers.
         </p>
         <form>
-          <input type="email" placeholder="Enter your email..." />
+          <div class="inputBox">
+            <input
+              class="emailInput"
+              type="email"
+              placeholder="Enter your email..."
+            />
+            <p class="errorMessage">Please check yout email</p>
+          </div>
           <button>Get Started</button>
         </form>
       </div>
@@ -132,7 +139,12 @@
       </div>
       <div class="signUp__right">
         <form>
-          <input type="email" placeholder="email@example.com" />
+          <input
+            class="emailInput"
+            type="email"
+            placeholder="email@example.com"
+          />
+          <p class="errorMessage">Please check yout email</p>
           <button>Get Started For Free</button>
         </form>
       </div>
@@ -295,5 +307,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Batenkin Alexander</a>.
     </p>
+    <script src="index.js"></script>
   </body>
 </html>

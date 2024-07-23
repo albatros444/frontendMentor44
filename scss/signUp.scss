@@ -1,9 +1,11 @@
 .signUp {
   display: flex;
+  justify-content: space-between;
   padding: $sidePadding;
   padding-top: 100px;
   background-color: $desBlue;
   &__left {
+    // padding-right: 230px;
     h2 {
       margin-bottom: 20px;
       font-family: $raleway;
@@ -18,6 +20,7 @@
     }
   }
   &__right {
+    padding-right: 50px;
     input {
       display: block;
       width: 480px;
@@ -30,6 +33,19 @@
       box-shadow: 0px 2px 2px 3px hsl(238, 22%, 40%, 60%);
       &::placeholder {
         color: hsl(0, 0%, 65%);
+      }
+    }
+    .errorMessage {
+      display: none;
+      font-size: 13px;
+      margin-bottom: 15px;
+      color: white;
+    }
+    .wrongEmail {
+      border: 1px solid $red;
+      margin-bottom: 5px;
+      & + p {
+        display: block;
       }
     }
     button {
