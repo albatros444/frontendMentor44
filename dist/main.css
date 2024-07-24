@@ -449,7 +449,7 @@ footer .footerBottom .socialLinks .box a:hover svg g {
 @media screen and (max-width: 600px) {
   nav {
     height: 70px;
-    padding: 0 24px;
+    padding: 0 20px;
   }
   nav img {
     height: 24px;
@@ -460,11 +460,15 @@ footer .footerBottom .socialLinks .box a:hover svg g {
   }
   .hero {
     display: block;
-    padding: 0 24px;
-    padding-bottom: 130px;
+    padding: 0 20px;
+    padding-bottom: 100px;
+    margin-top: 75px;
+    background: url(/images/bg-curve-mobile.svg) bottom/contain no-repeat;
   }
   .hero__right {
+    padding: 0 12px;
     margin-left: 0;
+    margin-bottom: 35px;
   }
   .hero__right img {
     height: auto;
@@ -474,55 +478,73 @@ footer .footerBottom .socialLinks .box a:hover svg g {
     width: 100%;
   }
   .hero__left h1 {
+    margin-bottom: 25px;
     font-family: "Open Sans", sans-serif;
     font-size: 24px;
     text-align: center;
   }
   .hero__left .heroText {
+    margin-bottom: 30px;
     font-size: 14px;
     text-align: center;
     letter-spacing: 0.02em;
-    line-height: 1.4;
+    line-height: 1.5;
   }
   .hero__left form {
+    display: block;
     padding: 0 10px;
   }
-  .hero__left form input {
+  .hero__left form .inputBox {
+    height: 58px;
+  }
+  .hero__left form .inputBox input {
+    height: 42px;
     width: 100%;
+    font-size: 12px;
+    padding-top: 1px;
   }
   .hero__left form button {
     width: 100%;
+    height: 42px;
   }
   .stayProductive {
     display: block;
-    padding: 0 24px;
-    padding-top: 50px;
+    padding: 0 20px;
+    padding-top: 10px;
     padding-bottom: 80px;
   }
   .stayProductive__right {
     margin-left: 0;
+    padding-left: 8px;
+    padding-right: 8px;
   }
   .stayProductive__right img {
     height: auto;
     width: 100%;
-    margin-bottom: 70px;
+    margin-bottom: 83px;
+  }
+  .stayProductive__left {
+    margin-right: 0;
   }
   .stayProductive__left h2 {
+    width: 100%;
     padding-bottom: 24px;
     font-size: 16px;
     text-align: center;
+    letter-spacing: 0.01em;
   }
   .stayProductive__left__text {
     width: 100%;
+    padding-right: 10px;
     font-size: 14px;
     color: hsl(238, 22%, 44%);
   }
   .stayProductive__left .seeHowLink {
     display: block;
     width: 130px;
-    margin: 30px auto 0;
+    margin: 35px auto 0;
     font-size: 12px;
-    padding-bottom: 7px;
+    padding-bottom: 5px;
   }
   .stayProductive__left .seeHowLink svg {
     top: 2px;
@@ -537,7 +559,7 @@ footer .footerBottom .socialLinks .box a:hover svg g {
     content: "";
     display: block;
     position: absolute;
-    left: 30px;
+    left: 26px;
     top: 20px;
     background: center top/11px 13px url(/images/icon-quotes.svg) no-repeat;
     height: 18px;
@@ -547,7 +569,7 @@ footer .footerBottom .socialLinks .box a:hover svg g {
     font-size: 11px;
     line-height: 1.65;
     font-weight: 500;
-    color: hsl(243, 67%, 12%);
+    color: hsl(243, 17%, 32%);
     letter-spacing: -0.01em;
   }
   .stayProductive__left .credential .personInfo img {
@@ -558,27 +580,41 @@ footer .footerBottom .socialLinks .box a:hover svg g {
     letter-spacing: 0;
   }
   .stayProductive__left .credential .personInfo .info p:nth-child(2) {
-    font-size: 8px;
+    font-size: 7px;
   }
   .signUp {
     display: block;
-    padding: 55px 30px 70px;
+    padding: 55px 30px 75px;
     text-align: center;
   }
+  .signUp__left {
+    padding: 0 5px;
+  }
   .signUp__left h2 {
-    font-size: 18px;
+    margin-bottom: 18px;
+    font-size: 19px;
+    color: hsl(240, 75%, 98%);
   }
   .signUp__left p {
     width: 100%;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     font-size: 14px;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.03em;
     line-height: 1.5;
+    color: hsl(240, 75%, 95%);
+  }
+  .signUp__right {
+    margin: 0 auto;
+    padding-right: 0;
+    padding-top: 5px;
   }
   .signUp__right input {
     display: inline-block;
     width: 240px;
     height: 32px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 7px;
     border-radius: 2px;
     font-size: 10px;
   }
@@ -590,16 +626,20 @@ footer .footerBottom .socialLinks .box a:hover svg g {
     letter-spacing: 0.01em;
   }
   footer {
-    padding: 70px 40px 0;
+    padding: 67px 40px 0;
   }
   footer .logo {
-    margin-bottom: 40px;
+    margin-bottom: 37px;
   }
   footer .footerBottom {
     display: block;
+    padding-bottom: 45px;
   }
   footer .footerBottom .phoneAndEmail {
     margin-bottom: 60px;
+  }
+  footer .footerBottom .phoneAndEmail p {
+    color: hsl(0, 0%, 75%);
   }
   footer .footerBottom .links {
     display: block;
@@ -607,10 +647,12 @@ footer .footerBottom .socialLinks .box a:hover svg g {
   }
   footer .footerBottom .links a {
     display: inline-block;
+    color: hsl(0, 0%, 75%);
     width: auto;
+    margin-bottom: 15px;
   }
   footer .footerBottom .links__left {
-    margin-bottom: 60px;
+    margin-bottom: 35px;
   }
   footer .footerBottom .socialLinks {
     width: 100%;
