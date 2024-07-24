@@ -1,21 +1,25 @@
 .stayProductive {
   display: flex;
-  align-items: center;
-  flex-direction: row-reverse;
+  // align-items: center;
+  // flex-direction: row-reverse;
   padding: $sidePadding;
-  padding-top: 50px;
+  padding-top: 65px;
   padding-bottom: 110px;
   background: hsl(240, 63%, 98%);
   &__left {
+    margin-right: 50px;
+    order: 1;
     h2 {
-      padding-bottom: 40px;
+      width: 660px;
+      padding-bottom: 37px;
       font-family: $raleway;
-      font-size: 39px;
+      font-size: 41px;
+      letter-spacing: -0.01em;
     }
     &__text {
       width: 520px;
       margin-bottom: 15px;
-      line-height: 1.6;
+      line-height: 1.55;
     }
     .seeHowLink {
       position: relative;
@@ -27,27 +31,26 @@
       transition: $trans13;
       svg {
         position: absolute;
-        top: 5px;
+        top: 3px;
 
         g {
           g {
             use {
               transition: $trans13;
-
               fill: $modCyan;
             }
           }
         }
       }
       &:hover {
-        color: hsl(170, 55%, 63%);
-        border-bottom: 1px solid hsl(170, 55%, 63%);
+        color: hsl(170, 65%, 66%);
+        border-bottom: 1px solid hsl(170, 65%, 66%);
 
         svg {
           g {
             g {
               use {
-                fill: hsl(170, 55%, 63%);
+                fill: hsl(170, 65%, 66%);
               }
             }
           }
@@ -58,15 +61,15 @@
       position: relative;
       width: 356px;
       margin-top: 50px;
-      padding: 50px 30px 20px;
+      padding: 52px 33px 27px;
       border-radius: 4px;
       background-color: white;
-      box-shadow: 0px 0px 5px 10px hsl(238, 22%, 94%, 50%);
+      box-shadow: 0px 0px 3px 7px hsl(238, 22%, 94%, 50%);
       &::before {
         content: "";
         display: block;
         position: absolute;
-        left: 30px;
+        left: 34px;
         top: 30px;
         background: center top / 14px 15px url(/images/icon-quotes.svg)
           no-repeat;
@@ -77,13 +80,14 @@
         margin-bottom: 15px;
         font-size: 13px;
         letter-spacing: 0.04em;
-        line-height: 1.7;
+        line-height: 1.75;
       }
       .personInfo {
         display: flex;
+        align-items: center;
         img {
-          height: 30px;
-          margin-right: 10px;
+          height: 32px;
+          margin-right: 8px;
           border-radius: 50%;
         }
         .info {
@@ -103,9 +107,11 @@
     }
   }
   &__right {
+    order: 2;
     margin-left: 20px;
+    padding-top: 30px;
     img {
-      height: 480px;
+      height: 410px;
     }
   }
 }

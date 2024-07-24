@@ -2,35 +2,41 @@
   display: flex;
   justify-content: space-between;
   padding: $sidePadding;
-  padding-top: 100px;
+  padding-top: 105px;
   background-color: $desBlue;
   &__left {
     // padding-right: 230px;
     h2 {
-      margin-bottom: 20px;
+      margin-bottom: 24px;
       font-family: $raleway;
       font-size: 32px;
       color: white;
     }
     p {
       width: 520px;
-      padding-bottom: 80px;
-      letter-spacing: 0.01em;
+      padding-bottom: 85px;
+      letter-spacing: 0.03em;
+      line-height: 1.5;
       color: white;
     }
   }
   &__right {
-    padding-right: 50px;
+    padding-right: 45px;
+    padding-top: 10px;
     input {
       display: block;
       width: 480px;
       height: 47px;
       margin-bottom: 15px;
       padding-left: 20px;
-      padding-bottom: 2px;
-      border-radius: 4px;
+      padding-bottom: 4px;
+      border-radius: 2px;
       border: none;
-      box-shadow: 0px 2px 2px 3px hsl(238, 22%, 40%, 60%);
+      font-size: 13px;
+      letter-spacing: -0.03em;
+      font-family: $raleway;
+      color: hsl(238, 22%, 40%);
+      box-shadow: 0px 2px 2px 3px hsl(238, 22%, 40%, 70%);
       &::placeholder {
         color: hsl(0, 0%, 65%);
       }
@@ -39,7 +45,8 @@
       display: none;
       font-size: 13px;
       margin-bottom: 15px;
-      color: white;
+      margin-top: -3px;
+      color: hsl(240, 75%, 98%);
     }
     .wrongEmail {
       border: 1px solid $red;
@@ -53,8 +60,9 @@
       height: 47px;
       width: 200px;
       padding: 0;
+      padding-bottom: 2px;
       border: none;
-      border-radius: 3px;
+      border-radius: 2px;
       outline: inherit;
       cursor: pointer;
       font-family: inherit;
@@ -62,7 +70,7 @@
       font-weight: 600;
       text-align: center;
       text-decoration: none;
-      box-shadow: 0px 1px 5px 3px hsl(238, 22%, 39%);
+      box-shadow: 2px 2px 7px hsl(238, 22%, 30%, 60%);
       background: $brightBlue;
       color: white;
       transition: $trans13;

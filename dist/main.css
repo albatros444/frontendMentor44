@@ -66,7 +66,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 160px;
+  height: 175px;
   padding: 0 80px;
 }
 nav .links {
@@ -86,12 +86,13 @@ nav .links a:hover {
 .hero {
   display: flex;
   align-items: center;
-  flex-direction: row-reverse;
   padding: 0 80px;
-  padding-bottom: 300px;
+  margin-top: 30px;
+  padding-bottom: 270px;
   background: url(/images/bg-curve-desktop.svg) bottom/contain no-repeat;
 }
 .hero__right {
+  order: 1;
   margin-left: 20px;
 }
 .hero__right img {
@@ -101,17 +102,18 @@ nav .links a:hover {
   width: 600px;
 }
 .hero__left h1 {
-  margin-bottom: 20px;
-  font-size: 38px;
+  margin-bottom: 17px;
+  font-size: 40px;
   font-family: "Raleway", sans-serif;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 .hero__left .heroText {
-  margin-bottom: 20px;
+  margin-bottom: 23px;
   font-size: 18px;
 }
 .hero__left form {
   display: flex;
+  margin-bottom: 40px;
 }
 .hero__left form .inputBox {
   height: 65px;
@@ -119,8 +121,8 @@ nav .links a:hover {
 .hero__left form .inputBox input {
   position: relative;
   width: 318px;
-  height: 42px;
-  margin-right: 10px;
+  height: 44px;
+  margin-right: 15px;
   margin-bottom: 5px;
   padding-left: 18px;
   padding-top: 4px;
@@ -145,7 +147,7 @@ nav .links a:hover {
 }
 .hero__left form button {
   display: block;
-  height: 42px;
+  height: 44px;
   width: 200px;
   padding: 0;
   border: none;
@@ -157,6 +159,7 @@ nav .links a:hover {
   font-weight: 600;
   text-align: center;
   text-decoration: none;
+  box-shadow: 2px 2px 5px hsl(224, 73%, 85%);
   background-color: hsl(224, 93%, 58%);
   color: white;
   transition: all 0.13s ease-in-out;
@@ -167,22 +170,26 @@ nav .links a:hover {
 
 .stayProductive {
   display: flex;
-  align-items: center;
-  flex-direction: row-reverse;
   padding: 0 80px;
-  padding-top: 50px;
+  padding-top: 65px;
   padding-bottom: 110px;
   background: hsl(240, 63%, 98%);
 }
+.stayProductive__left {
+  margin-right: 50px;
+  order: 1;
+}
 .stayProductive__left h2 {
-  padding-bottom: 40px;
+  width: 660px;
+  padding-bottom: 37px;
   font-family: "Raleway", sans-serif;
-  font-size: 39px;
+  font-size: 41px;
+  letter-spacing: -0.01em;
 }
 .stayProductive__left__text {
   width: 520px;
   margin-bottom: 15px;
-  line-height: 1.6;
+  line-height: 1.55;
 }
 .stayProductive__left .seeHowLink {
   position: relative;
@@ -194,33 +201,33 @@ nav .links a:hover {
 }
 .stayProductive__left .seeHowLink svg {
   position: absolute;
-  top: 5px;
+  top: 3px;
 }
 .stayProductive__left .seeHowLink svg g g use {
   transition: all 0.13s ease-in-out;
   fill: hsl(170, 45%, 43%);
 }
 .stayProductive__left .seeHowLink:hover {
-  color: hsl(170, 55%, 63%);
-  border-bottom: 1px solid hsl(170, 55%, 63%);
+  color: hsl(170, 65%, 66%);
+  border-bottom: 1px solid hsl(170, 65%, 66%);
 }
 .stayProductive__left .seeHowLink:hover svg g g use {
-  fill: hsl(170, 55%, 63%);
+  fill: hsl(170, 65%, 66%);
 }
 .stayProductive__left .credential {
   position: relative;
   width: 356px;
   margin-top: 50px;
-  padding: 50px 30px 20px;
+  padding: 52px 33px 27px;
   border-radius: 4px;
   background-color: white;
-  box-shadow: 0px 0px 5px 10px hsla(238, 22%, 94%, 0.5);
+  box-shadow: 0px 0px 3px 7px hsla(238, 22%, 94%, 0.5);
 }
 .stayProductive__left .credential::before {
   content: "";
   display: block;
   position: absolute;
-  left: 30px;
+  left: 34px;
   top: 30px;
   background: center top/14px 15px url(/images/icon-quotes.svg) no-repeat;
   height: 23px;
@@ -230,14 +237,15 @@ nav .links a:hover {
   margin-bottom: 15px;
   font-size: 13px;
   letter-spacing: 0.04em;
-  line-height: 1.7;
+  line-height: 1.75;
 }
 .stayProductive__left .credential .personInfo {
   display: flex;
+  align-items: center;
 }
 .stayProductive__left .credential .personInfo img {
-  height: 30px;
-  margin-right: 10px;
+  height: 32px;
+  margin-right: 8px;
   border-radius: 50%;
 }
 .stayProductive__left .credential .personInfo .info p:nth-child(1) {
@@ -250,33 +258,37 @@ nav .links a:hover {
   color: hsla(243, 87%, 12%, 0.7);
 }
 .stayProductive__right {
+  order: 2;
   margin-left: 20px;
+  padding-top: 30px;
 }
 .stayProductive__right img {
-  height: 480px;
+  height: 410px;
 }
 
 .signUp {
   display: flex;
   justify-content: space-between;
   padding: 0 80px;
-  padding-top: 100px;
+  padding-top: 105px;
   background-color: hsl(238, 22%, 44%);
 }
 .signUp__left h2 {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   font-family: "Raleway", sans-serif;
   font-size: 32px;
   color: white;
 }
 .signUp__left p {
   width: 520px;
-  padding-bottom: 80px;
-  letter-spacing: 0.01em;
+  padding-bottom: 85px;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
   color: white;
 }
 .signUp__right {
-  padding-right: 50px;
+  padding-right: 45px;
+  padding-top: 10px;
 }
 .signUp__right input {
   display: block;
@@ -284,10 +296,14 @@ nav .links a:hover {
   height: 47px;
   margin-bottom: 15px;
   padding-left: 20px;
-  padding-bottom: 2px;
-  border-radius: 4px;
+  padding-bottom: 4px;
+  border-radius: 2px;
   border: none;
-  box-shadow: 0px 2px 2px 3px hsla(238, 22%, 40%, 0.6);
+  font-size: 13px;
+  letter-spacing: -0.03em;
+  font-family: "Raleway", sans-serif;
+  color: hsl(238, 22%, 40%);
+  box-shadow: 0px 2px 2px 3px hsla(238, 22%, 40%, 0.7);
 }
 .signUp__right input::placeholder {
   color: hsl(0, 0%, 65%);
@@ -296,7 +312,8 @@ nav .links a:hover {
   display: none;
   font-size: 13px;
   margin-bottom: 15px;
-  color: white;
+  margin-top: -3px;
+  color: hsl(240, 75%, 98%);
 }
 .signUp__right .wrongEmail {
   border: 1px solid hsl(345, 60%, 69%);
@@ -310,8 +327,9 @@ nav .links a:hover {
   height: 47px;
   width: 200px;
   padding: 0;
+  padding-bottom: 2px;
   border: none;
-  border-radius: 3px;
+  border-radius: 2px;
   outline: inherit;
   cursor: pointer;
   font-family: inherit;
@@ -319,7 +337,7 @@ nav .links a:hover {
   font-weight: 600;
   text-align: center;
   text-decoration: none;
-  box-shadow: 0px 1px 5px 3px hsl(238, 22%, 39%);
+  box-shadow: 2px 2px 7px hsla(238, 22%, 30%, 0.6);
   background: hsl(224, 93%, 58%);
   color: white;
   transition: all 0.13s ease-in-out;
@@ -330,7 +348,7 @@ nav .links a:hover {
 
 footer {
   padding: 0 80px;
-  padding-top: 90px;
+  padding-top: 110px;
   background-color: hsl(243, 87%, 12%);
 }
 footer p,
@@ -340,9 +358,12 @@ footer a {
 footer .logo {
   margin-bottom: 20px;
 }
+footer .logo svg {
+  height: 50px;
+}
 footer .footerBottom {
   display: flex;
-  padding-bottom: 80px;
+  padding-bottom: 60px;
 }
 footer .footerBottom .phoneAndEmail {
   width: 440px;
@@ -350,7 +371,7 @@ footer .footerBottom .phoneAndEmail {
 footer .footerBottom .phoneAndEmail .phone {
   position: relative;
   padding-left: 37px;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 }
 footer .footerBottom .phoneAndEmail .phone:before {
   content: url(/images/icon-phone.svg);
@@ -361,7 +382,7 @@ footer .footerBottom .phoneAndEmail .phone:before {
 footer .footerBottom .phoneAndEmail .email {
   position: relative;
   padding-left: 37px;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 }
 footer .footerBottom .phoneAndEmail .email:before {
   content: url(/images/icon-email.svg);
@@ -376,7 +397,7 @@ footer .footerBottom .links {
 }
 footer .footerBottom .links__left a {
   display: block;
-  margin-bottom: 13px;
+  margin-bottom: 15px;
   transition: all 0.13s ease-in-out;
 }
 footer .footerBottom .links__left a:hover {
@@ -384,7 +405,7 @@ footer .footerBottom .links__left a:hover {
 }
 footer .footerBottom .links__right a {
   display: block;
-  margin-bottom: 13px;
+  margin-bottom: 15px;
   transition: all 0.13s ease-in-out;
 }
 footer .footerBottom .links__right a:hover {
@@ -404,15 +425,15 @@ footer .footerBottom .socialLinks .box a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 1px solid white;
   transition: all 0.13s ease-in-out;
 }
 footer .footerBottom .socialLinks .box a svg {
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
 }
 footer .footerBottom .socialLinks .box a svg g {
   fill: white;

@@ -1,6 +1,6 @@
 footer {
   padding: $sidePadding;
-  padding-top: 90px;
+  padding-top: 110px;
   background-color: $daBlue;
   p,
   a {
@@ -8,17 +8,19 @@ footer {
   }
   .logo {
     margin-bottom: 20px;
+    svg {
+      height: 50px;
+    }
   }
   .footerBottom {
     display: flex;
-    // justify-content: space-between;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
     .phoneAndEmail {
       width: 440px;
       .phone {
         position: relative;
         padding-left: 37px;
-        margin-bottom: 15px;
+        margin-bottom: 17px;
         &:before {
           content: url(/images/icon-phone.svg);
           position: absolute;
@@ -29,7 +31,7 @@ footer {
       .email {
         position: relative;
         padding-left: 37px;
-        margin-bottom: 15px;
+        margin-bottom: 17px;
         &:before {
           content: url(/images/icon-email.svg);
           position: absolute;
@@ -45,7 +47,7 @@ footer {
       &__left {
         a {
           display: block;
-          margin-bottom: 13px;
+          margin-bottom: 15px;
           transition: $trans13;
           &:hover {
             color: hsl(218, 82%, 74%);
@@ -55,7 +57,7 @@ footer {
       &__right {
         a {
           display: block;
-          margin-bottom: 13px;
+          margin-bottom: 15px;
           transition: $trans13;
           &:hover {
             color: hsl(218, 82%, 74%);
@@ -75,14 +77,14 @@ footer {
           display: flex;
           justify-content: center;
           align-items: center;
-          width: 32px;
-          height: 32px;
+          width: 30px;
+          height: 30px;
           border-radius: 50%;
           border: 1px solid white;
           transition: $trans13;
           svg {
-            width: 16px;
-            height: 16px;
+            width: 14px;
+            height: 14px;
             g {
               fill: white;
               transition: $trans13;
