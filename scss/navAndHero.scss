@@ -22,6 +22,7 @@ nav {
 .hero {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: $sidePadding;
   margin-top: 30px;
   padding-bottom: 270px;
@@ -30,14 +31,14 @@ nav {
     order: 1;
     margin-left: 20px;
     img {
-      height: 480px;
+      height: 33.33vw; //480px;
     }
   }
   &__left {
     width: 600px;
     h1 {
       margin-bottom: 17px;
-      font-size: 40px;
+      font-size: 2.77vw; //40px;
       font-family: $raleway;
       line-height: 1.5;
     }
@@ -47,6 +48,7 @@ nav {
     }
     form {
       display: flex;
+      flex-wrap: wrap;
       margin-bottom: 40px;
       .inputBox {
         height: 65px;

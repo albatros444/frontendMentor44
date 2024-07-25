@@ -1,0 +1,50 @@
+@media screen and (min-width: 1460px) {
+  nav {
+    max-width: 1720px;
+    margin: 0 auto;
+    padding: 0 95px;
+    // height: 14vw;
+  }
+  .hero {
+    max-width: 1720px;
+    margin: 0 auto;
+    padding: 0 95px 270px;
+    &__right {
+      img {
+        max-height: 500px;
+      }
+    }
+    &__left {
+      flex-shrink: 0;
+      h1 {
+        font-size: 44px;
+      }
+    }
+  }
+  .stayProductive {
+    max-width: 1720px;
+    margin: 0 auto;
+    padding: 65px 95px 110px;
+    &__right {
+      img {
+        max-height: 500px;
+      }
+    }
+    &__left {
+      h2 {
+        min-width: auto;
+        font-size: 44px;
+      }
+    }
+  }
+  .signUp {
+    max-width: 1720px;
+    margin: 0 auto;
+    padding: 105px 95px 0;
+  }
+  footer {
+    max-width: 1720px;
+    margin: 0 auto;
+    padding: 105px 95px 0;
+  }
+}

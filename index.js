@@ -8,6 +8,7 @@ forms.forEach((form) => {
     form.reset();
     inputFields.forEach((inpF) => {
       inpF.classList.remove("wrongEmail");
+      inpF.value = "";
     });
   });
 });

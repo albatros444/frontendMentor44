@@ -1,9 +1,10 @@
 @media screen and (max-width: 600px) {
   nav {
-    height: 70px;
-    padding: $sidePaddingMob;
+    height: 18.66vw; //70px;
+    padding: 0 6.2vw; //$sidePaddingMob;
     img {
-      height: 24px;
+      height: 6.4vw; //24px;
+      min-height: 24px;
     }
     .links {
       width: 165px;
@@ -29,7 +30,9 @@
     &__left {
       width: 100%;
       h1 {
-        margin-bottom: 25px;
+        max-width: 400px;
+        margin: 0 auto 25px;
+        // margin-bottom: 25px;
         font-family: $openSans;
         font-size: 24px;
         text-align: center;
@@ -38,12 +41,15 @@
         margin-bottom: 30px;
         font-size: 14px;
         text-align: center;
-        letter-spacing: 0.02em;
+        // letter-spacing: 0.01em;
         line-height: 1.5;
+        padding: 0 12px;
       }
       form {
         display: block;
-        padding: 0 10px;
+        max-width: 350px;
+        margin: 0 auto;
+        padding: 0 15px;
         .inputBox {
           height: 58px;
           input {
@@ -51,6 +57,10 @@
             width: 100%;
             font-size: 12px;
             padding-top: 1px;
+            margin-bottom: 0;
+          }
+          .errorMessage {
+            font-size: 10px;
           }
         }
         button {
@@ -76,11 +86,13 @@
       }
     }
     &__left {
+      max-width: 500px;
+      margin: 0 auto;
       margin-right: 0;
       h2 {
         width: 100%;
         padding-bottom: 24px;
-        font-size: 16px;
+        font-size: 4.26vw; //16px;
         text-align: center;
         letter-spacing: 0.01em;
       }
@@ -88,7 +100,7 @@
         width: 100%;
         padding-right: 10px;
         font-size: 14px;
-        color: $desBlue;
+        color: hsl(238, 12%, 44%);
       }
 
       .seeHowLink {
@@ -119,6 +131,7 @@
           width: 12px;
         }
         &__text {
+          margin-bottom: 12px;
           font-size: 11px;
           line-height: 1.65;
           font-weight: 500;
@@ -146,21 +159,24 @@
   }
   .signUp {
     display: block;
-    padding: 55px 30px 75px;
+    padding: 55px 8vw 75px; //30px
     text-align: center;
     &__left {
       padding: 0 5px;
       h2 {
         margin-bottom: 18px;
-        font-size: 19px;
+        margin-right: 0;
+        font-size: 4.8vw; //19px;
         color: $liGrayBlue;
       }
       p {
         width: 100%;
+        max-width: 500px;
+        margin-right: 0;
         padding-bottom: 20px;
-        font-size: 14px;
-        letter-spacing: 0.03em;
-        line-height: 1.5;
+        font-size: 13px;
+        letter-spacing: 0.02em;
+        line-height: 1.6;
         color: hsl(240, 75%, 95%);
       }
     }
@@ -170,25 +186,34 @@
       padding-top: 5px;
       input {
         display: inline-block;
-        width: 240px;
-        height: 32px;
-        padding-left: 10px;
+        width: 64vw; //240px;
+        max-width: 300px;
+        height: 8.53vw; //32px;
+        padding-left: 2.66vw; //10px;
         padding-bottom: 0px;
         margin-bottom: 7px;
         border-radius: 2px;
+        font-size: 2.66vw; //10px;
+        letter-spacing: 0.01em;
+      }
+      .errorMessage {
+        position: relative;
+        left: 10.66vw; //40px;
         font-size: 10px;
+        margin-bottom: 5px;
       }
       button {
-        width: 240px;
-        height: 32px;
+        width: 64vw; //240px;
+        max-width: 300px;
+        height: 8.53vw; //32px;
         border-radius: 2px;
-        font-size: 10px;
+        font-size: 2.66vw; //10px;
         letter-spacing: 0.01em;
       }
     }
   }
   footer {
-    padding: 67px 40px 0;
+    padding: 67px 37px 0;
     .logo {
       margin-bottom: 37px;
     }
@@ -198,12 +223,14 @@
 
       .phoneAndEmail {
         margin-bottom: 60px;
+        width: 100%;
         p {
           color: $liGray;
         }
       }
       .links {
         display: block;
+        width: 100%;
         margin-bottom: 40px;
         a {
           display: inline-block;
@@ -228,6 +255,25 @@
             }
           }
         }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) and (min-width: 465px) {
+  .signUp {
+    padding-bottom: 50px;
+    &__right {
+      input {
+        font-size: 13px;
+        height: 36px;
+      }
+      .errorMessage {
+        padding-left: calc(21vw - 85px);
+        // left: 20%; //48px;
+      }
+      button {
+        height: 36px;
+        font-size: 14px;
       }
     }
   }

@@ -67,7 +67,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 175px;
-  padding: 0 80px;
+  padding: 0 5.55vw;
 }
 nav .links {
   display: flex;
@@ -86,7 +86,8 @@ nav .links a:hover {
 .hero {
   display: flex;
   align-items: center;
-  padding: 0 80px;
+  justify-content: space-between;
+  padding: 0 5.55vw;
   margin-top: 30px;
   padding-bottom: 270px;
   background: url(/images/bg-curve-desktop.svg) bottom/contain no-repeat;
@@ -96,14 +97,14 @@ nav .links a:hover {
   margin-left: 20px;
 }
 .hero__right img {
-  height: 480px;
+  height: 33.33vw;
 }
 .hero__left {
   width: 600px;
 }
 .hero__left h1 {
   margin-bottom: 17px;
-  font-size: 40px;
+  font-size: 2.77vw;
   font-family: "Raleway", sans-serif;
   line-height: 1.5;
 }
@@ -113,6 +114,7 @@ nav .links a:hover {
 }
 .hero__left form {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 40px;
 }
 .hero__left form .inputBox {
@@ -170,7 +172,7 @@ nav .links a:hover {
 
 .stayProductive {
   display: flex;
-  padding: 0 80px;
+  padding: 0 5.55vw;
   padding-top: 65px;
   padding-bottom: 110px;
   background: hsl(240, 63%, 98%);
@@ -180,14 +182,14 @@ nav .links a:hover {
   order: 1;
 }
 .stayProductive__left h2 {
-  width: 660px;
+  min-width: 45.8vw;
   padding-bottom: 37px;
   font-family: "Raleway", sans-serif;
-  font-size: 41px;
+  font-size: 2.85vw;
   letter-spacing: -0.01em;
 }
 .stayProductive__left__text {
-  width: 520px;
+  max-width: 520px;
   margin-bottom: 15px;
   line-height: 1.55;
 }
@@ -263,31 +265,33 @@ nav .links a:hover {
   padding-top: 30px;
 }
 .stayProductive__right img {
-  height: 410px;
+  height: 28.47vw;
 }
 
 .signUp {
   display: flex;
   justify-content: space-between;
-  padding: 0 80px;
+  padding: 0 5.55vw;
   padding-top: 105px;
   background-color: hsl(238, 22%, 44%);
 }
 .signUp__left h2 {
   margin-bottom: 24px;
+  margin-right: 30px;
   font-family: "Raleway", sans-serif;
   font-size: 32px;
   color: white;
 }
 .signUp__left p {
-  width: 520px;
+  max-width: 520px;
+  margin-right: 35px;
   padding-bottom: 85px;
   letter-spacing: 0.03em;
   line-height: 1.5;
   color: white;
 }
 .signUp__right {
-  padding-right: 45px;
+  padding-right: 3.12vw;
   padding-top: 10px;
 }
 .signUp__right input {
@@ -297,7 +301,7 @@ nav .links a:hover {
   margin-bottom: 15px;
   padding-left: 20px;
   padding-bottom: 4px;
-  border-radius: 2px;
+  border-radius: 3px;
   border: none;
   font-size: 13px;
   letter-spacing: -0.03em;
@@ -313,6 +317,7 @@ nav .links a:hover {
   font-size: 13px;
   margin-bottom: 15px;
   margin-top: -3px;
+  text-align: left;
   color: hsl(240, 75%, 98%);
 }
 .signUp__right .wrongEmail {
@@ -347,13 +352,13 @@ nav .links a:hover {
 }
 
 footer {
-  padding: 0 80px;
+  padding: 0 5.55vw;
   padding-top: 110px;
   background-color: hsl(243, 87%, 12%);
 }
 footer p,
 footer a {
-  color: white;
+  color: hsl(240, 75%, 98%);
 }
 footer .logo {
   margin-bottom: 20px;
@@ -448,11 +453,12 @@ footer .footerBottom .socialLinks .box a:hover svg g {
 
 @media screen and (max-width: 600px) {
   nav {
-    height: 70px;
-    padding: 0 20px;
+    height: 18.66vw;
+    padding: 0 6.2vw;
   }
   nav img {
-    height: 24px;
+    height: 6.4vw;
+    min-height: 24px;
   }
   nav .links {
     width: 165px;
@@ -460,7 +466,7 @@ footer .footerBottom .socialLinks .box a:hover svg g {
   }
   .hero {
     display: block;
-    padding: 0 20px;
+    padding: 0 5.333vw;
     padding-bottom: 100px;
     margin-top: 75px;
     background: url(/images/bg-curve-mobile.svg) bottom/contain no-repeat;
@@ -478,7 +484,8 @@ footer .footerBottom .socialLinks .box a:hover svg g {
     width: 100%;
   }
   .hero__left h1 {
-    margin-bottom: 25px;
+    max-width: 400px;
+    margin: 0 auto 25px;
     font-family: "Open Sans", sans-serif;
     font-size: 24px;
     text-align: center;
@@ -487,12 +494,14 @@ footer .footerBottom .socialLinks .box a:hover svg g {
     margin-bottom: 30px;
     font-size: 14px;
     text-align: center;
-    letter-spacing: 0.02em;
     line-height: 1.5;
+    padding: 0 12px;
   }
   .hero__left form {
     display: block;
-    padding: 0 10px;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 0 15px;
   }
   .hero__left form .inputBox {
     height: 58px;
@@ -502,6 +511,10 @@ footer .footerBottom .socialLinks .box a:hover svg g {
     width: 100%;
     font-size: 12px;
     padding-top: 1px;
+    margin-bottom: 0;
+  }
+  .hero__left form .inputBox .errorMessage {
+    font-size: 10px;
   }
   .hero__left form button {
     width: 100%;
@@ -509,7 +522,7 @@ footer .footerBottom .socialLinks .box a:hover svg g {
   }
   .stayProductive {
     display: block;
-    padding: 0 20px;
+    padding: 0 5.333vw;
     padding-top: 10px;
     padding-bottom: 80px;
   }
@@ -524,12 +537,14 @@ footer .footerBottom .socialLinks .box a:hover svg g {
     margin-bottom: 83px;
   }
   .stayProductive__left {
+    max-width: 500px;
+    margin: 0 auto;
     margin-right: 0;
   }
   .stayProductive__left h2 {
     width: 100%;
     padding-bottom: 24px;
-    font-size: 16px;
+    font-size: 4.26vw;
     text-align: center;
     letter-spacing: 0.01em;
   }
@@ -537,7 +552,7 @@ footer .footerBottom .socialLinks .box a:hover svg g {
     width: 100%;
     padding-right: 10px;
     font-size: 14px;
-    color: hsl(238, 22%, 44%);
+    color: hsl(238, 12%, 44%);
   }
   .stayProductive__left .seeHowLink {
     display: block;
@@ -566,6 +581,7 @@ footer .footerBottom .socialLinks .box a:hover svg g {
     width: 12px;
   }
   .stayProductive__left .credential__text {
+    margin-bottom: 12px;
     font-size: 11px;
     line-height: 1.65;
     font-weight: 500;
@@ -584,7 +600,7 @@ footer .footerBottom .socialLinks .box a:hover svg g {
   }
   .signUp {
     display: block;
-    padding: 55px 30px 75px;
+    padding: 55px 8vw 75px;
     text-align: center;
   }
   .signUp__left {
@@ -592,15 +608,18 @@ footer .footerBottom .socialLinks .box a:hover svg g {
   }
   .signUp__left h2 {
     margin-bottom: 18px;
-    font-size: 19px;
+    margin-right: 0;
+    font-size: 4.8vw;
     color: hsl(240, 75%, 98%);
   }
   .signUp__left p {
     width: 100%;
+    max-width: 500px;
+    margin-right: 0;
     padding-bottom: 20px;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    line-height: 1.5;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    line-height: 1.6;
     color: hsl(240, 75%, 95%);
   }
   .signUp__right {
@@ -610,23 +629,32 @@ footer .footerBottom .socialLinks .box a:hover svg g {
   }
   .signUp__right input {
     display: inline-block;
-    width: 240px;
-    height: 32px;
-    padding-left: 10px;
+    width: 64vw;
+    max-width: 300px;
+    height: 8.53vw;
+    padding-left: 2.66vw;
     padding-bottom: 0px;
     margin-bottom: 7px;
     border-radius: 2px;
+    font-size: 2.66vw;
+    letter-spacing: 0.01em;
+  }
+  .signUp__right .errorMessage {
+    position: relative;
+    left: 10.66vw;
     font-size: 10px;
+    margin-bottom: 5px;
   }
   .signUp__right button {
-    width: 240px;
-    height: 32px;
+    width: 64vw;
+    max-width: 300px;
+    height: 8.53vw;
     border-radius: 2px;
-    font-size: 10px;
+    font-size: 2.66vw;
     letter-spacing: 0.01em;
   }
   footer {
-    padding: 67px 40px 0;
+    padding: 67px 37px 0;
   }
   footer .logo {
     margin-bottom: 37px;
@@ -637,12 +665,14 @@ footer .footerBottom .socialLinks .box a:hover svg g {
   }
   footer .footerBottom .phoneAndEmail {
     margin-bottom: 60px;
+    width: 100%;
   }
   footer .footerBottom .phoneAndEmail p {
     color: hsl(0, 0%, 75%);
   }
   footer .footerBottom .links {
     display: block;
+    width: 100%;
     margin-bottom: 40px;
   }
   footer .footerBottom .links a {
@@ -667,6 +697,179 @@ footer .footerBottom .socialLinks .box a:hover svg g {
   footer .footerBottom .socialLinks .box a svg {
     width: 12px;
     height: 12px;
+  }
+}
+@media screen and (max-width: 600px) and (min-width: 465px) {
+  .signUp {
+    padding-bottom: 50px;
+  }
+  .signUp__right input {
+    font-size: 13px;
+    height: 36px;
+  }
+  .signUp__right .errorMessage {
+    padding-left: calc(21vw - 85px);
+  }
+  .signUp__right button {
+    height: 36px;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 950px) {
+  nav {
+    height: 16vw;
+  }
+  nav .links {
+    width: 200px;
+  }
+  nav .links a {
+    font-size: 14px;
+  }
+  .hero {
+    display: block;
+    padding: 0;
+    padding-bottom: 120px;
+  }
+  .hero__right {
+    display: block;
+    margin-left: 0;
+    margin: 0 auto;
+  }
+  .hero__right img {
+    display: block;
+    height: auto;
+    width: 600px;
+    margin: 0 auto 40px;
+  }
+  .hero__left {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    padding: 0 40px;
+  }
+  .hero__left h1 {
+    font-size: 30px;
+    max-width: 650px;
+    padding: 0 40px;
+    margin: 0 auto 17px;
+    text-align: center;
+  }
+  .hero__left .heroText {
+    text-align: center;
+  }
+  .hero__left form {
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .hero__left form .inputBox input {
+    max-width: 318px;
+  }
+  .hero__left form button {
+    max-width: 200px;
+  }
+  .stayProductive {
+    display: block;
+    padding: 0;
+  }
+  .stayProductive__right {
+    display: block;
+    margin: 0 auto;
+  }
+  .stayProductive__right img {
+    display: block;
+    height: auto;
+    width: 550px;
+    margin: 0 auto 50px;
+  }
+  .stayProductive__left {
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+  .stayProductive__left h2 {
+    font-size: 30px;
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .stayProductive__left .textBox {
+    max-width: 750px;
+    margin: 0 auto 50px;
+    padding: 0 40px;
+  }
+  .stayProductive__left .textBox p {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 15px;
+  }
+  .stayProductive__left .credential {
+    margin: 0 auto;
+  }
+  .signUp {
+    display: block;
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  .signUp__left h2 {
+    font-size: 30px;
+  }
+  .signUp__left p {
+    padding-bottom: 20px;
+  }
+  footer .footerBottom {
+    flex-wrap: wrap;
+  }
+  footer .footerBottom .phoneAndEmail {
+    width: 50%;
+  }
+  footer .footerBottom .links {
+    width: 40vw;
+    margin-bottom: 50px;
+  }
+  footer .footerBottom .socialLinks {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1460px) {
+  nav {
+    max-width: 1720px;
+    margin: 0 auto;
+    padding: 0 95px;
+  }
+  .hero {
+    max-width: 1720px;
+    margin: 0 auto;
+    padding: 0 95px 270px;
+  }
+  .hero__right img {
+    max-height: 500px;
+  }
+  .hero__left {
+    flex-shrink: 0;
+  }
+  .hero__left h1 {
+    font-size: 44px;
+  }
+  .stayProductive {
+    max-width: 1720px;
+    margin: 0 auto;
+    padding: 65px 95px 110px;
+  }
+  .stayProductive__right img {
+    max-height: 500px;
+  }
+  .stayProductive__left h2 {
+    min-width: auto;
+    font-size: 44px;
+  }
+  .signUp {
+    max-width: 1720px;
+    margin: 0 auto;
+    padding: 105px 95px 0;
+  }
+  footer {
+    max-width: 1720px;
+    margin: 0 auto;
+    padding: 105px 95px 0;
   }
 }
 
